@@ -1,0 +1,26 @@
+{
+    "name": "Sample Addon",
+    "description": "Sample HipChat Addon",
+    "key": "sample-hipchat-addon",
+    "links": {
+        "homepage": "https://my.server.com/my-addon",
+        "self": "https://my.server.com/my-addon/capabilities.json"
+    },
+    "vendor": {
+        "name": "Atlassian",
+        "url": "https://www.atlassian.com/"
+    },
+    "capabilities": {
+        "hipchatApiConsumer": {
+            "fromName": "Sample Add-on",
+            "scopes": [
+                "send_notification"
+            ]
+        },
+        "installable": {
+            "allowGlobal": false,
+            "allowRoom": true,
+            "callbackUrl": "https://my.server.com/my-addon/installed"
+        }
+    }
+}
